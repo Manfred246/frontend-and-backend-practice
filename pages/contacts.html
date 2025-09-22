@@ -3,36 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/styles.css">
     <title>Контакты - Семестровая работа</title>
 </head>
-<body>    
-    <div id="header">Хэдер</div>        
-    <div id="menu">
-        <ul>
-            <li><a href="../index.html">Главная</a></li>
-            <li><a href="../pages/news.html">Новости</a></li>
-            <li><a href="../pages/practices.html">Практики</a></li> 
-            <li><a href="../pages/goods.html">Товары</a></li>
-            <li><a href="../pages/contacts.html">Контакты</a></li>
-        </ul>
-    </div>        
-    <div id="content">
-        <h1>Наши контакты</h1>
-        <div>
-            <div>
-                <h3>Электронная почта:</h3>
-                <p>nenaebobo@company.ru</p>
-            </div>                        
-            <div>
-                <h3>Адрес:</h3>
-                <p>г. Москва, ул. Воздвиженка, д. 1А.</p>
-            </div>                        
-            <div>
-                <button onclick="callMe()">Позвоните мне</button>
+<body>
+    <div class="page-container">
+        <div class="header">Хэдер</div>
+
+        <div class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/practices.html">Практики</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1 class="contacts-header">Наши контакты</h1>
+            
+            <div class="contacts-container">
+                <div class="contact-card">
+                    <h3 class="contact-title">Электронная почта:</h3>
+                    <p class="contact-info">nenaebobo@company.ru</p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3 class="contact-title">Адрес:</h3>
+                    <p class="contact-info">г. Москва, ул. Воздвиженка, д. 1А</p>
+                </div>
+                
+                <button class="call-button" onclick="callMe()">Позвоните мне</button>
             </div>
         </div>
-    </div>        
-    <div id="footer">Футер</div>
+        
+        <div class="footer">Футер</div>
+    </div>
 
     <script>
         function callMe() {
