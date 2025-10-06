@@ -10,9 +10,11 @@
 
 <body>
     <div class="page-container">
-        <div class="header">Хэдер</div>
-
-        <div class="nav">
+        <header class="nav-list">
+            <h1>Хэдер</h1>
+        </header>
+        
+        <nav class="nav">
             <ul class="nav-list">
                 <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
                 <li class="nav-item"><a class="nav-link" href="pages/news.html">Новости</a></li>
@@ -20,45 +22,54 @@
                 <li class="nav-item"><a class="nav-link" href="pages/goods.html">Товары</a></li>
                 <li class="nav-item"><a class="nav-link" href="pages/contacts.html">Контакты</a></li>
             </ul>
-        </div>
+        </nav>
 
-        <div class="content">
-            <div class="profile-header">
+        <main class="content">
+            <article class="profile-header">
                 <h1 class="profile-title">Информация об авторе</h1>
                 <img  class="profile-photo" src="images/photo.jpg" alt="Фото автора" width="200" height="250">
                 <h2 class="profile-name">Бельдий Матвей Олегович</h2>
                 <p class="profile-group">ЭФБО-18-24</p>
-            </div>
+            </article>
 
-            <div class="about-me">
+            <section class="about-me">
+                <h2>Обо мне:</h2>
                 <p>Обо мне: Родился в Москве. Профессиональный игрок на нервах и в доту. Деньги на лечение можете кидать по
                     номеру телефона.</p>
-            </div>
+            </section>
 
-            <div class="skills-container">
-                <div class="skill-tag">Профессиональный врун</div>
-                <div class="skill-tag">Красноречие 100 lvl</div>
-                <div class="skill-tag">Могу тратить много денег на ерунду</div>
-                <div class="skill-tag">Профессионально лежу на кровати</div>
-            </div>
+            <section class="skills-container">
+                <h2>Мои навыки</h2>
+                <div class="skills-grid">
+                    <div class="skill-tag">Профессиональный врун</div>
+                    <div class="skill-tag">Красноречие 100 lvl</div>
+                    <div class="skill-tag">Могу тратить много денег на ерунду</div>
+                    <div class="skill-tag">Профессионально лежу на кровати</div>
+                </div>                
+            </section>
 
-            <div class="experience-section">
-                <h2 class="sectioin-title">Мой опыт работы: 10000 лет</h2>
-                <div class="experience-card">
-                    <h3 class="experience-title">Опыт 1</h3>
-                    <p class="experience-desc">Разгружал фуры с деньгами</p>
+            <section class="experience-section">
+                <h2 class="section-title">Мой опыт работы</h2>
+                <div class="experience-grid">
+                    <article class="experience-card">
+                        <h3 class="experience-title">Опыт 1</h3>
+                        <p class="experience-desc">Разгружал фуры с деньгами</p>
+                    </article>
+                    <article class="experience-card">
+                        <h3 class="experience-title">Опыт 2</h3>
+                        <p class="experience-desc">Тестировщик снов</p>
+                    </article>
+                    <article class="experience-card">
+                        <h3 class="experience-title">Опыт 3</h3>
+                        <p class="experience-desc">Консультировал богов</p>
+                    </article>
                 </div>
-                <div class="experience-card">
-                    <h3 class="experience-title">Опыт 2</h3>
-                    <p class="experience-desc">Тестировщик снов</p>
-                </div>
-                <div class="experience-card">
-                    <h3 class="experience-title">Опыт 3</h3>
-                    <p class="experience-desc">Консультировал богов</p>
-                </div>
-            </div>
-        </div>
-        <div class="footer">Футер</div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Футер</p>
+        </footer>        
     </div>
 </body>
 
